@@ -163,17 +163,6 @@ nav {
   }
 }
 
-@keyframes maindivLoad {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-#maindiv {
-  opacity: 1;
-  animation-name: maindivLoad;
-  animation-duration: 2s;
-}
-
 .content {
   top: 50px;
   position: relative;
@@ -215,59 +204,14 @@ section::after {
 
 footer {
   background-color: rgb(200,200,200);
-  padding: 20px;
-  padding-left: 120px;
-  padding-right: 120px;
-  height: 120px;
+  padding: 10px;
   width: auto;
   color: white;
   text-align: center;
 }
 
-.footerinfo {
-  float: left;
-  padding: 10px;
-  margin-right: 50px;
-  width: 40%;
-}
-
-.footerquicklinks {
-  float: left;
-  padding: 10px;
-  width: 200px;
-}
-
 .footertext {
-  float: left;
-  padding: 5px;
-  width: 90px;
+  margin: 20px;
   color: black;
   text-decoration-line: none;
-  font-size: 15px;
-}
-
-@media (max-width: 900px) {
-  footer {
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 350px;
-  }
-
-  .footerinfo {
-    padding: 0px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .footerquicklinks {
-    float: left;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .footertext {
-    padding: 5%;
-    width: 40%;
-  }
 }
