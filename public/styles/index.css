@@ -214,39 +214,54 @@ section::after {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgb(200,200,200);
   padding: 20px;
   padding-left: 120px;
   padding-right: 120px;
-  height: 120px;
+  height: 150px;
   width: auto;
   color: white;
   text-align: center;
 }
 
 .footerinfo {
+  flex: 30%;
   float: left;
   padding: 10px;
-  margin-right: 50px;
-  width: 40%;
+}
+
+.footerinfoinner {
+  margin: auto;
+  padding: 1px;
+  height: fit-content;
+  max-width: 320px;
 }
 
 .footerquicklinks {
+  flex: 30%;
   float: left;
   padding: 10px;
-  width: 200px;
+}
+
+.footerquicklinksinner {
+  margin: auto;
+  padding: 1px;
+  height: fit-content;
+  max-width: 180px;
 }
 
 .footertext {
   float: left;
   padding: 5px;
-  width: 90px;
+  width: 80px;
   color: black;
   text-decoration-line: none;
   font-size: 15px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -254,20 +269,15 @@ footer {
   }
 
   .footerinfo {
+    flex: 100%;
     padding: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
-    width: 100%;
   }
 
   .footerquicklinks {
+    flex: 100%;
     float: left;
     padding: 0px;
-    width: 100%;
-  }
-
-  .footertext {
-    padding: 5%;
-    width: 40%;
   }
 }
