@@ -191,30 +191,6 @@ article {
   width: auto;
 }
 
-.row {
-  margin-bottom: 30px;
-}
-
-.column {
-  float: left;
-  width: 30%;
-  margin: 1.65%;
-}
-
-.column_doubleend {
-  float: left;
-  width: 30%;
-  margin: 1.65%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 section::after {
   content: "";
   display: table;
